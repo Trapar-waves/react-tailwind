@@ -18,8 +18,10 @@
   },
   "keywords": [
     "react",
+    "tailwindcss",
     "rsbuild",
-    "tailwind",
+    "typescript",
+    "eslint",
     "iconify"
   ],
   "publishConfig": {
