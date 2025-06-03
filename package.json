@@ -1,7 +1,7 @@
 {
   "name": "@trapar-waves/react-tailwind",
   "type": "module",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "A modern UI development template integrating React and Tailwind CSS, with Rsbuild, TypeScript, ESLint (Antfu config), and Iconify support.",
   "author": {
     "email": "admin@rikka.cc",
