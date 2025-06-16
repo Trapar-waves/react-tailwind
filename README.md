@@ -89,6 +89,6 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 
 ## 🔗 Links
 
-- **Repository:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-- **Homepage:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-- **Issues:** [https://github.com/react-tailwind/Trapar-waves/issues](https://github.com/react-tailwind/Trapar-waves/issues)
+- **Repository:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **Homepage:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **Issues:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
