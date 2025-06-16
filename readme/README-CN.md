@@ -1,164 +1,95 @@
 # @trapar-waves/react-tailwind
 
-![npm 版本](https://img.shields.io/npm/v/@trapar-waves/react-tailwind)
-![月下载量](https://img.shields.io/npm/dm/@trapar-waves/react-tailwind)
-![许可证](https://img.shields.io/badge/license-ISC-green)
-![最近一次提交](https://img.shields.io/github/last-commit/Trapar-waves/react-tailwind)
-![构建状态](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
+![npm version](https://img.shields.io/npm/v/@trapar-waves/react-tailwind)
+![npm dm](https://img.shields.io/npm/dm/@trapar-waves/react-tailwind)
+![License](https://img.shields.io/github/license/Trapar-waves/react-tailwind)
+![GitHub last commit](https://img.shields.io/github/last-commit/Trapar-waves/react-tailwind)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
+![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
-> 一个集成 React 和 Tailwind CSS 的现代化 UI 开发模板，包含 Rsbuild、TypeScript 和 ESLint。
+---
 
-## 📚 目录
-- [✨ 核心特性](#-核心特性)
-- [🚀 快速入门指南](#-快速入门指南)
-- [🛠️ 使用说明](#%EF%B8%8F-使用说明)
-- [💻 技术栈概览](#-技术栈概览)
-- [🤝 如何贡献](#-如何贡献)
-- [📄 许可证](#-许可证)
-- [👤 作者信息](#-作者信息)
-- [🔗 项目相关链接](#-项目相关链接)
+[English](../README.md) | [日本語](/readme/README-JP.md) | [Русский язык](/readme/README-RU.md)
 
-## ✨ 核心特性
+> 一个结合React、Mantine UI和Tailwind CSS的项目，用于构建现代Web应用。
 
-* **现代化 UI 框架：** 基于 React，采用组件化驱动的设计理念。
-* **实用至上：** 使用 Tailwind CSS，提供灵活高效、快速上手的样式开发体验。
-* **类型安全保障：** 集成 TypeScript，提升代码质量并减少运行时错误。
-* **高效开发流程：** 通过 Rsbuild 进行优化构建，并快速启动开发服务器。
-* **图标集成：** 全面支持 Iconify，提供超过 100,000+ 个图标，涵盖 100+ 个图标集。
-* **响应式设计：** 内置工具类，可创建在所有设备尺寸上都能正常工作的全响应式布局。
-* **深色模式支持：** 使用 Tailwind 的配色方案工具类实现原生深色模式。
-* **代码质量优先：** 配置了基于 Antfu 的 ESLint，注重代码整洁性与可维护性。
-* **PostCSS 集成：** 使用 Tailwind CSS 的 PostCSS 插件，实现更高级的 CSS 处理。
+## ✨ 特性
 
-## 🚀 快速入门指南
+- **现代UI框架:** 使用React (v19)构建组件驱动的声明式界面。
+- **丰富的组件库:** 与Mantine UI（`@mantine/core`和`@mantine/hooks`）集成，提供预构建的UI元素和实用钩子。
+- **实用优先的样式:** 采用Tailwind CSS和`@tailwindcss/postcss`，实现灵活快速的样式设计，同时保持一致性。
+- **PostCSS集成:** 利用PostCSS插件如`postcss-import`、`autoprefixer`和`postcss-simple-vars`进行高级CSS处理。
+- **类型安全:** 使用TypeScript (v5.8.x)增强代码可靠性，并在开发过程中提供强大的类型检查。
+- **快速开发工作流:** 使用Rsbuild（`@rsbuild/core`和`@rsbuild/plugin-react`）实现优化构建和高效开发服务器性能。
+- **图标支持:** 包含`@iconify/json`和`@iconify/tailwind`，提供可扩展和可定制的图标。
+- **一致的设计语言:** 结合`postcss-preset-mantine`和`tailwind-preset-mantine`，实现Mantine和Tailwind样式的无缝集成。
+- **注重代码质量:** 包含ESLint和`@antfu/eslint-config`，用于代码 linting 和执行最佳实践。
 
-按照以下步骤，快速在本地运行该项目。
+## 💻 技术栈
 
-### 环境要求
+- **框架/库:** React (v19)
+- **UI工具包/样式:** Mantine UI（`@mantine/core`），Tailwind CSS（`tailwindcss`）
+- **构建工具:** Rsbuild（`@rsbuild/core`）
+- **语言:** TypeScript (v5.8.x)
+- **CSS处理:** PostCSS与插件如`autoprefixer`和`postcss-simple-vars`
+- **代码检查:** ESLint与`@antfu/eslint-config`
+- **状态管理:** Zustand
+- **路由:** Tanstack Router
+- **数据获取:** Tanstack Query (React Query)
+- **表格组件:** Tanstack Table
 
-* 确保已安装以下工具：
-    * Node.js（推荐版本 >= 18.x）
-    * 包管理工具（npm、yarn 或 pnpm）
-    ```bash
-    node -v
-    npm -v # 或 yarn -v 或 pnpm -v
-    ```
+完整依赖列表参见[package.json](package.json)。
+
+## 🚀 开始使用
+
+按照以下说明在本地运行项目。
+
+### 前提条件
+
+确保已安装以下软件：
+
+- Node.js (推荐 >= 18.x 版本)
+- 包管理器 (npm, yarn 或 pnpm)
+
+```bash
+node -v
+npm -v
+```
 
 ### 安装步骤
 
-1. 克隆代码库：
-    ```bash
-    git clone https://github.com/Trapar-waves/react-tailwind.git
-    cd react-tailwind
-    ```
-2. 安装依赖：
-    ```bash
-    # 使用你喜欢的包管理工具
-    npm install
-    # 或
-    yarn install
-    # 或
-    pnpm install
-    ```
+运行脚本
 
-## 🛠️ 使用说明
-
-安装完成后，可以通过以下方式运行和使用项目。
-
-### 常用脚本
-
-通过 `npm run <脚本>`、`yarn <脚本>` 或 `pnpm <脚本>` 来运行以下命令：
-
-* `dev`：启动开发服务器，并在浏览器中打开应用。
-* `build`：生成适用于生产环境的构建版本。
-* `preview`：启动本地服务器，用于预览生产环境构建结果。
-
-示例：
 ```bash
-# 启动开发服务器
-npm run dev
-
-# 生成生产环境构建
-npm run build
+pnpm create trapar-waves
 ```
 
-## 💻 技术栈概览
+安装依赖
 
-该项目使用了以下关键技术：
-
-* **框架/库：** React
-* **样式解决方案：** Tailwind CSS
-* **构建工具：** Rsbuild
-* **编程语言：** TypeScript
-* **代码质量工具：** 基于 Antfu 配置的 ESLint
-* **图标支持：** 集成 Iconify
-
-完整的依赖列表可参考 [package.json](package.json) 文件。
-
-## 🤝 如何贡献
-
-贡献是开源社区之所以成为学习、启发和创造的绝佳场所的原因。您的任何贡献都将**受到高度赞赏**。
-
-### 贡献步骤
-
-1. Fork 本项目
-2. 创建功能分支 (`git checkout -b feature/amazing-feature`)
-3. 提交更改 (`git commit -m 'Add some amazing feature'`)
-4. 推送到分支 (`git push origin feature/amazing-feature`)
-5. 打开 Pull Request
-
-### 行为准则
-
-本项目遵循 [Contributor Covenant](https://www.contributor-covenant.org/) 行为准则。参与本项目即表示您同意遵守此准则。
-
-### 开发指南
-- 遵循现有的代码风格和约定
-- 为新功能添加测试
-- 根据需要更新文档
-- 提交 PR 前确保所有测试通过
-
-## 📝 更新日志
-
-有关版本历史和变更的详细信息，请参见 [CHANGELOG.md](../CHANGELOG.md) 文件。
-
-## 📸 截图
-
-![项目预览](https://example.com/preview.png) - *在此处添加项目截图*
-
-## 📄 许可证
-
-本项目基于 **ISC** 许可证发布。更多详情请查看 `LICENSE` 文件。
-
-## 👤 作者信息
-
-* **Rikka** ([admin@rikka.cc](mailto:admin@rikka.cc))
-* GitHub: [@Muromi-Rikka](https://github.com/Muromi-Rikka)
-
-## 🔗 项目相关链接
-
-* **代码仓库：** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-* **主页：** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-* **问题反馈：** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
+```bash
+npm install
+yarn install
+pnpm install
 ```
 
-### 改进说明
+## 🤝 贡献指南
 
-1. **调整语言表达，使内容更贴近中文习惯**：
-   - 将“npm 每月下载量”改为“月下载量”。
-   - 将“GitHub 上次提交”改为“最近一次提交”。
-   - 优化句子结构，使描述更加自然流畅。
+欢迎贡献，非常感谢您的支持！请按照以下步骤进行贡献：
 
-2. **优化术语翻译**：
-   - 将“实用优先的样式设计”改为“实用至上”，更贴合 Tailwind CSS 的理念。
-   - 对技术术语进行了更准确的翻译，如“组件化驱动的设计理念”。
+1. Fork 本仓库
+2. 创建功能分支（`git checkout -b feature/amazing-feature`）
+3. 提交您的更改（`git commit -m 'Add some amazing feature'`）
+4. 推送到分支（`git push origin feature/amazing-feature`）
+5. 打开Pull Request
 
-3. **消除冗余表达**：
-   - 合并了“主页”和“代码仓库”重复的链接，仅保留必要的链接。
-   - 在“技术栈”部分简化了分类描述，避免重复。
+## 👤 Author
 
-4. **提升清晰度**：
-   - 将“可能支持 Iconify”改为“很可能集成了 Iconify”，减少歧义。
-   - 对“完整的依赖列表”进行了更明确的说明。
+- **Rikka:** (admin@rikka.cc)
+- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
-5. **增强可读性**：
-   - 优化句子结构，避免生硬的直译，使内容更符合中文读者的阅读习惯。
+## 🔗 Links
+
+- **仓库:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
+
+* **主页:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
+* **问题:** [https://github.com/react-tailwind/Trapar-waves/issues](https://github.com/react-tailwind/Trapar-waves/issues)
