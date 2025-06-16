@@ -1,147 +1,95 @@
 # @trapar-waves/react-tailwind
 
-![Версия npm](https://img.shields.io/npm/v/@trapar-waves/react-tailwind)
-![Загрузки npm в месяц](https://img.shields.io/npm/dm/@trapar-waves/react-tailwind)
-![Лицензия](https://img.shields.io/badge/license-ISC-green)
-![Последний коммит на GitHub](https://img.shields.io/github/last-commit/Trapar-waves/react-tailwind)
-![Статус сборки](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
+![npm version](https://img.shields.io/npm/v/@trapar-waves/react-tailwind)
+![npm dm](https://img.shields.io/npm/dm/@trapar-waves/react-tailwind)
+![License](https://img.shields.io/github/license/Trapar-waves/react-tailwind)
+![GitHub last commit](https://img.shields.io/github/last-commit/Trapar-waves/react-tailwind)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
+![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
-> Современный шаблон разработки UI, интегрирующий React и Tailwind CSS с Rsbuild, TypeScript и ESLint.
+---
 
-## 📚 Оглавление
-- [✨ Особенности](#-особенности)
-- [🚀 Начало работы](#-начало-работы)
-- [🛠️ Использование](#%EF%B8%8F-использование)
-- [💻 Технологический стек](#-технологический-стек)
-- [🤝 Вклад в проект](#-вклад-в-проект)
-- [📝 Журнал изменений](#-журнал-изменений)
-- [📄 Лицензия](#-лицензия)
-- [📸 Скриншоты](#-скриншоты)
-- [👤 Автор](#-автор)
-- [🔗 Ссылки](#-ссылки)
+[English](../README.md) | [中文](/readme/README-CN.md) | [日本語](/readme/README-JP.md)
+
+> Проект, сочетающий React, Mantine UI и Tailwind CSS для создания современных веб-приложений.
 
 ## ✨ Особенности
 
-* **Компонентная структура:** Построен с использованием React, обеспечивающего гибкий и модульный подход к созданию UI.
-* **Утилитарный подход к стилизации:** Использует Tailwind CSS для гибкой и быстрой стилизации.
-* **Типобезопасность:** Использует TypeScript для повышения качества кода и уменьшения ошибок во время выполнения.
-* **Оптимизированная разработка:** Использует Rsbuild для оптимизированных сборок и быстрого запуска сервера.
-* **Интеграция иконок:** Полная поддержка Iconify, предоставляющая доступ к более чем 100 000+ иконкам из 100+ наборов иконок.
-* **Адаптивный дизайн:** Встроенные утилиты для создания полностью адаптивных макетов, работающих на всех размерах устройств.
-* **Поддержка темной темы:** Нативная реализация темной темы с использованием утилит цветовых схем Tailwind.
-* **Качество кода:** Настроен ESLint с конфигурацией Antfu для поддержания чистоты и читаемости кода.
-* **Расширенная обработка CSS:** Плагин PostCSS от Tailwind CSS предоставляет дополнительные возможности для работы со стилями.
+- **Современный UI-фреймворк:** Строится с использованием React (v19) для компонентно-ориентированного декларативного интерфейса.
+- **Богатая библиотека компонентов:** Интегрируется с Mantine UI (`@mantine/core` и `@mantine/hooks`), предоставляя предварительно построенные UI-элементы и утилитарные хуки.
+- **Стилизация с упором на утилиты:** Использует Tailwind CSS вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю стилизацию при сохранении согласованности.
+- **Интеграция с PostCSS:** Получает преимущества от плагинов PostCSS, таких как `postcss-import`, `autoprefixer` и `postcss-simple-vars`, для расширенной обработки CSS.
+- **Типовая безопасность:** Использует TypeScript (v5.8.x) для повышения надежности кода и обеспечения надежной проверки типов во время разработки.
+- **Быстрый рабочий процесс разработки:** Использует Rsbuild (`@rsbuild/core` и `@rsbuild/plugin-react`) для оптимизированных сборок и эффективной производительности сервера разработки.
+- **Поддержка иконок:** Включает `@iconify/json` и `@iconify/tailwind` для масштабируемой и настраиваемой иконографии.
+- **Согласованный дизайн-язык:** Комбинирует `postcss-preset-mantine` и `tailwind-preset-mantine` для бесперебойной интеграции стилей Mantine и Tailwind.
+- **Фокус на качестве кода:** Включает ESLint с `@antfu/eslint-config` для линтинга и обеспечения лучших практик в кодовой базе.
+
+## 💻 Технологический стек
+
+- **Фреймворк/Библиотека:** React (v19)
+- **UI-тулкит/Стилизация:** Mantine UI (`@mantine/core`), Tailwind CSS (`tailwindcss`)
+- **Инструмент сборки:** Rsbuild (`@rsbuild/core`)
+- **Язык:** TypeScript (v5.8.x)
+- **Обработка CSS:** PostCSS с плагинами вроде `autoprefixer` и `postcss-simple-vars`
+- **Линтинг:** ESLint с `@antfu/eslint-config`
+- **Управление состоянием:** Zustand
+- **Маршрутизация:** Tanstack Router
+- **Получение данных:** Tanstack Query (React Query)
+- **Табличный компонент:** Tanstack Table
+
+Полный список зависимостей см. в [package.json](package.json).
 
 ## 🚀 Начало работы
 
-Чтобы запустить проект локально, выполните следующие шаги.
+Следуйте этим инструкциям, чтобы запустить проект локально.
 
 ### Предварительные требования
 
-Для работы с проектом убедитесь, что установлены следующие программы:
-* Node.js (рекомендуется версия 18.x или выше)
-* Менеджер пакетов (npm, yarn или pnpm)
+Убедитесь, что у вас установлены следующие компоненты:
 
-Проверьте версии:
+- Node.js (рекомендуется версия >= 18.x)
+- Пакетный менеджер (npm, yarn или pnpm)
+
 ```bash
 node -v
-npm -v # или yarn -v или pnpm -v
+npm -v
 ```
 
 ### Установка
 
-1. Склонируйте репозиторий:
-    ```bash
-    git clone https://github.com/Trapar-waves/react-tailwind.git
-    cd react-tailwind
-    ```
-2. Установите зависимости:
-    ```bash
-    # Выберите предпочитаемый менеджер пакетов
-    npm install
-    # или
-    yarn install
-    # или
-    pnpm install
-    ```
+Запустить скрипт
 
-## 🛠️ Использование
-
-Раздел содержит инструкции по запуску и использованию проекта после установки.
-
-### Доступные команды
-
-Для запуска скриптов используйте `npm run <команда>`, `yarn <команда>` или `pnpm <команда>`:
-
-* `dev`: Запускает сервер разработки и открывает приложение в браузере.
-* `build`: Создает оптимизированную сборку для продакшена.
-* `preview`: Предоставляет возможность предварительно просмотреть продакшен-сборку.
-
-Пример:
 ```bash
-# Запуск сервера разработки
-npm run dev
-
-# Создание продакшен-сборки
-npm run build
+pnpm create trapar-waves
 ```
 
-## 💻 Технологический стек
+Установить зависимости
 
-Ключевые технологии, используемые в проекте:
+```bash
+npm install
+yarn install
+pnpm install
+```
 
-* **Фреймворк/Библиотека:** React
-* **Инструменты стилизации:** Tailwind CSS
-* **Сборщик:** Rsbuild
-* **Язык программирования:** TypeScript
-* **Контроль качества кода:** ESLint с конфигурацией Antfu
-* **Иконки:** Интеграция Iconify
+## 🤝 Участие в разработке
 
-Полный список зависимостей доступен в файле [package.json](package.json).
+Вклад в проект приветствуется и очень ценится! Чтобы внести вклад, следуйте этим шагам:
 
-## 🤝 Вклад в проект
-
-Вклады в проект делают открытое сообщество таким удивительным местом для обучения, вдохновения и творчества. Любые ваши вклады **очень ценятся**.
-
-### Как внести вклад
-
-1. Сделайте форк проекта
-2. Создайте ветку с вашей функцией (`git checkout -b feature/amazing-feature`)
-3. Зафиксируйте изменения (`git commit -m 'Добавление какой-то удивительной функции'`)
-4. Отправьте ветку в репозиторий (`git push origin feature/amazing-feature`)
+1. Сделайте форк репозитория
+2. Создайте ветку с функцией (`git checkout -b feature/amazing-feature`)
+3. Зафиксируйте свои изменения (`git commit -m 'Add some amazing feature'`)
+4. Отправьте изменения в ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
 
-### Кодекс поведения
+## 👤 Author
 
-Этот проект следует [Кодексу поведения Contributor Covenant](https://www.contributor-covenant.org/). При участии в проекте вы должны соблюдать этот кодекс.
+- **Rikka:** (admin@rikka.cc)
+- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
-### Руководelines разработки
-- Соблюдайте существующий стиль кода и соглашения
-- Добавляйте тесты для новых функций
-- Обновляйте документацию при необходимости
-- Убедитесь, что все тесты проходят перед отправкой PR
+## 🔗 Links
 
-## 📝 Журнал изменений
+- **Репозиторий:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
 
-См. файл [CHANGELOG.md](CHANGELOG.md) для получения подробной информации о истории версий и изменениях.
-
-Вклад в проект приветствуется! Если вы хотите предложить изменения или исправить ошибки, создайте pull request.
-
-## 📸 Скриншоты
-
-![Предпросмотр проекта](https://example.com/preview.png) - *Добавьте скриншот вашего проекта здесь*
-
-## 📄 Лицензия
-
-Проект распространяется под лицензией **ISC**. Дополнительная информация доступна в файле [LICENSE](LICENSE).
-
-## 👤 Автор
-
-* **Рикка** ([admin@rikka.cc](mailto:admin@rikka.cc))
-* GitHub: [@Muromi-Rikka](https://github.com/Muromi-Rikka)
-
-## 🔗 Полезные ссылки
-
-* **Репозиторий:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-* **Домашняя страница:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-* **Сообщить о проблеме:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
+* **Домашняя страница:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
+* **Проблемы:** [https://github.com/react-tailwind/Trapar-waves/issues](https://github.com/react-tailwind/Trapar-waves/issues)
