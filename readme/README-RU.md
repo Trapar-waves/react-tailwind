@@ -89,7 +89,6 @@ pnpm install
 
 ## 🔗 Links
 
-- **Репозиторий:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-
-* **Домашняя страница:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-* **Проблемы:** [https://github.com/react-tailwind/Trapar-waves/issues](https://github.com/react-tailwind/Trapar-waves/issues)
+- **Репозиторий:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **Домашняя страница:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **Проблемы:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)

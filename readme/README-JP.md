@@ -89,6 +89,6 @@ pnpm install
 
 ## 🔗 Links
 
-- **リポジトリ:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-- **ホームページ:** [https://github.com/react-tailwind/Trapar-waves](https://github.com/react-tailwind/Trapar-waves)
-- **イシュー:** [https://github.com/react-tailwind/Trapar-waves/issues](https://github.com/react-tailwind/Trapar-waves/issues)
+- **リポジトリ:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **ホームページ:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **イシュー:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
