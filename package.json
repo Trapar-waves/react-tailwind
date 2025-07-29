@@ -37,8 +37,8 @@
     "postinstall": "husky"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^5.0.0",
