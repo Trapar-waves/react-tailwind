@@ -9,36 +9,31 @@
 
 ---
 
-[English](../README.md) | [日本語](/readme/README-JP.md) | [Русский язык](/readme/README-RU.md)
+[English](../README.md) | [日本語](./README-JP.md) | [Русский язык](./README-RU.md)
 
-> 一个结合React、Mantine UI和Tailwind CSS的项目，用于构建现代Web应用。
+> 一个现代UI开发模板，集成了React和Tailwind CSS，以及Rsbuild、TypeScript、ESLint (Antfu config)和Iconify支持。
 
 ## ✨ 特性
 
 - **现代UI框架:** 使用React (v19)构建组件驱动的声明式界面。
-- **丰富的组件库:** 与Mantine UI（`@mantine/core`和`@mantine/hooks`）集成，提供预构建的UI元素和实用钩子。
-- **实用优先的样式:** 采用Tailwind CSS和`@tailwindcss/postcss`，实现灵活快速的样式设计，同时保持一致性。
-- **PostCSS集成:** 利用PostCSS插件如`postcss-import`、`autoprefixer`和`postcss-simple-vars`进行高级CSS处理。
-- **类型安全:** 使用TypeScript (v5.8.x)增强代码可靠性，并在开发过程中提供强大的类型检查。
+- **实用优先的样式:** 采用Tailwind CSS v4 (`tailwindcss`)和`@tailwindcss/postcss`，实现灵活快速的样式设计，同时保持一致性。
 - **快速开发工作流:** 使用Rsbuild（`@rsbuild/core`和`@rsbuild/plugin-react`）实现优化构建和高效开发服务器性能。
-- **图标支持:** 包含`@iconify/json`和`@iconify/tailwind`，提供可扩展和可定制的图标。
-- **一致的设计语言:** 结合`postcss-preset-mantine`和`tailwind-preset-mantine`，实现Mantine和Tailwind样式的无缝集成。
+- **图标支持:** 包含`@iconify/json`和`@iconify/tailwind4`，提供可扩展和可定制的图标。
+- **类型安全:** 使用TypeScript (v5.9.x)增强代码可靠性，并在开发过程中提供强大的类型检查。
 - **注重代码质量:** 包含ESLint和`@antfu/eslint-config`，用于代码 linting 和执行最佳实践。
+- **Git Hooks:** 集成`husky`和`lint-staged`用于提交前检查。
 
 ## 💻 技术栈
 
 - **框架/库:** React (v19)
-- **UI工具包/样式:** Mantine UI（`@mantine/core`），Tailwind CSS（`tailwindcss`）
-- **构建工具:** Rsbuild（`@rsbuild/core`）
-- **语言:** TypeScript (v5.8.x)
-- **CSS处理:** PostCSS与插件如`autoprefixer`和`postcss-simple-vars`
+- **样式:** Tailwind CSS (`tailwindcss`)
+- **构建工具:** Rsbuild (`@rsbuild/core`)
+- **语言:** TypeScript (v5.9.x)
+- **CSS处理:** PostCSS with `@tailwindcss/postcss`
 - **代码检查:** ESLint与`@antfu/eslint-config`
-- **状态管理:** Zustand
-- **路由:** Tanstack Router
-- **数据获取:** Tanstack Query (React Query)
-- **表格组件:** Tanstack Table
+- **图标库:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-完整依赖列表参见[package.json](package.json)。
+完整依赖列表参见[package.json](../package.json)。
 
 ## 🚀 开始使用
 
@@ -58,18 +53,40 @@ npm -v
 
 ### 安装步骤
 
-运行脚本
+1. 使用模板创建新项目:
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. 导航到项目目录并安装依赖:
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. 启动开发服务器:
+
+   ```bash
+   pnpm dev
+   ```
+
+## 🧱 项目结构
+
 ```
-
-安装依赖
-
-```bash
-npm install
-yarn install
-pnpm install
+├── public/           # 静态资源
+├── src/              # 源代码
+│   ├── App.css       # 全局样式和Tailwind导入
+│   ├── App.tsx       # 主应用组件
+│   └── index.tsx     # 入口点
+├── rsbuild.config.ts # Rsbuild配置
+├── tsconfig.json     # TypeScript配置
+├── eslint.config.js  # ESLint配置
+└── package.json      # 项目依赖和脚本
 ```
 
 ## 🤝 贡献指南
@@ -84,7 +101,7 @@ pnpm install
 
 ## 👤 Author
 
-- **Rikka:** (admin@rikka.cc)
+- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
 ## 🔗 Links

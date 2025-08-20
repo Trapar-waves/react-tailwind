@@ -9,36 +9,31 @@
 
 ---
 
-[English](../README.md) | [中文](/readme/README-CN.md) | [日本語](/readme/README-JP.md)
+[English](../README.md) | [中文](./README-CN.md) | [日本語](./README-JP.md)
 
-> Проект, сочетающий React, Mantine UI и Tailwind CSS для создания современных веб-приложений.
+> Современный шаблон разработки пользовательского интерфейса, интегрирующий React и Tailwind CSS, с поддержкой Rsbuild, TypeScript, ESLint (конфигурация Antfu) и Iconify.
 
 ## ✨ Особенности
 
 - **Современный UI-фреймворк:** Строится с использованием React (v19) для компонентно-ориентированного декларативного интерфейса.
-- **Богатая библиотека компонентов:** Интегрируется с Mantine UI (`@mantine/core` и `@mantine/hooks`), предоставляя предварительно построенные UI-элементы и утилитарные хуки.
-- **Стилизация с упором на утилиты:** Использует Tailwind CSS вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю стилизацию при сохранении согласованности.
-- **Интеграция с PostCSS:** Получает преимущества от плагинов PostCSS, таких как `postcss-import`, `autoprefixer` и `postcss-simple-vars`, для расширенной обработки CSS.
-- **Типовая безопасность:** Использует TypeScript (v5.8.x) для повышения надежности кода и обеспечения надежной проверки типов во время разработки.
+- **Стилизация с упором на утилиты:** Использует Tailwind CSS v4 (`tailwindcss`) вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю стилизацию при сохранении согласованности.
 - **Быстрый рабочий процесс разработки:** Использует Rsbuild (`@rsbuild/core` и `@rsbuild/plugin-react`) для оптимизированных сборок и эффективной производительности сервера разработки.
-- **Поддержка иконок:** Включает `@iconify/json` и `@iconify/tailwind` для масштабируемой и настраиваемой иконографии.
-- **Согласованный дизайн-язык:** Комбинирует `postcss-preset-mantine` и `tailwind-preset-mantine` для бесперебойной интеграции стилей Mantine и Tailwind.
+- **Поддержка иконок:** Включает `@iconify/json` и `@iconify/tailwind4` для масштабируемой и настраиваемой иконографии.
+- **Типовая безопасность:** Использует TypeScript (v5.9.x) для повышения надежности кода и обеспечения надежной проверки типов во время разработки.
 - **Фокус на качестве кода:** Включает ESLint с `@antfu/eslint-config` для линтинга и обеспечения лучших практик в кодовой базе.
+- **Git Hooks:** Интеграция `husky` и `lint-staged` для предварительных проверок коммитов.
 
 ## 💻 Технологический стек
 
 - **Фреймворк/Библиотека:** React (v19)
-- **UI-тулкит/Стилизация:** Mantine UI (`@mantine/core`), Tailwind CSS (`tailwindcss`)
+- **Стилизация:** Tailwind CSS (`tailwindcss`)
 - **Инструмент сборки:** Rsbuild (`@rsbuild/core`)
-- **Язык:** TypeScript (v5.8.x)
-- **Обработка CSS:** PostCSS с плагинами вроде `autoprefixer` и `postcss-simple-vars`
+- **Язык:** TypeScript (v5.9.x)
+- **Обработка CSS:** PostCSS with `@tailwindcss/postcss`
 - **Линтинг:** ESLint с `@antfu/eslint-config`
-- **Управление состоянием:** Zustand
-- **Маршрутизация:** Tanstack Router
-- **Получение данных:** Tanstack Query (React Query)
-- **Табличный компонент:** Tanstack Table
+- **Иконки:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-Полный список зависимостей см. в [package.json](package.json).
+Полный список зависимостей см. в [package.json](../package.json).
 
 ## 🚀 Начало работы
 
@@ -58,18 +53,40 @@ npm -v
 
 ### Установка
 
-Запустить скрипт
+1. Создайте новый проект с помощью шаблона:
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. Перейдите в каталог вашего проекта и установите зависимости:
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Запустите сервер разработки:
+
+   ```bash
+   pnpm dev
+   ```
+
+## 🧱 Структура проекта
+
 ```
-
-Установить зависимости
-
-```bash
-npm install
-yarn install
-pnpm install
+├── public/           # Статические ресурсы
+├── src/              # Исходный код
+│   ├── App.css       # Глобальные стили и импорт Tailwind
+│   ├── App.tsx       # Основной компонент приложения
+│   └── index.tsx     # Точка входа
+├── rsbuild.config.ts # Конфигурация Rsbuild
+├── tsconfig.json     # Конфигурация TypeScript
+├── eslint.config.js  # Конфигурация ESLint
+└── package.json      # Зависимости и скрипты проекта
 ```
 
 ## 🤝 Участие в разработке
@@ -84,7 +101,7 @@ pnpm install
 
 ## 👤 Author
 
-- **Rikka:** (admin@rikka.cc)
+- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
 ## 🔗 Links
