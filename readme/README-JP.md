@@ -9,36 +9,31 @@
 
 ---
 
-[English](../README.md) | [中文](/readme/README-CN.md) | [Русский язык](/readme/README-RU.md)
+[English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
-> React、Mantine UI、Tailwind CSSを組み合わせたプロジェクトで、現代的なWebアプリケーションを構築するためのものです。
+> ReactとTailwind CSSを統合したモダンなUI開発テンプレート。Rsbuild、TypeScript、ESLint (Antfu config)、Iconifyをサポート。
 
 ## ✨ 特徴
 
 - **モダンUIフレームワーク:** コンポーネント駆動の宣言型インターフェースのためにReact (v19)を使用して構築されています。
-- **豊富なコンポーネントライブラリ:** Mantine UI（`@mantine/core`と`@mantine/hooks`）と統合し、事前構築されたUI要素とユーティリティフックを提供します。
-- **ユーティリティファーストのスタイリング:** Tailwind CSSと`@tailwindcss/postcss`を採用し、一貫性を維持しながら柔軟で迅速なスタイリングを可能にします。
-- **PostCSS統合:** `postcss-import`、`autoprefixer`、`postcss-simple-vars`などのPostCSSプラグインを活用し、高度なCSS処理を実現します。
-- **型安全性:** TypeScript (v5.8.x)を使用してコードの信頼性を向上させ、開発中に堅牢な型チェックを提供します。
+- **ユーティリティファーストのスタイリング:** Tailwind CSS v4 (`tailwindcss`)と`@tailwindcss/postcss`を採用し、一貫性を維持しながら柔軟で迅速なスタイリングを可能にします。
 - **高速開発ワークフロー:** Rsbuild（`@rsbuild/core`と`@rsbuild/plugin-react`）を使用して最適化されたビルドと効率的な開発サーバーパフォーマンスを実現します。
-- **アイコンサポート:** `@iconify/json`と`@iconify/tailwind`を含み、スケーラブルでカスタマイズ可能なアイコンを提供します。
-- **一貫したデザイン言語:** `postcss-preset-mantine`と`tailwind-preset-mantine`を組み合わせ、MantineとTailwindスタイルのシームレスな統合を実現します。
+- **アイコンサポート:** `@iconify/json`と`@iconify/tailwind4`を含み、スケーラブルでカスタマイズ可能なアイコンを提供します。
+- **型安全性:** TypeScript (v5.9.x)を使用してコードの信頼性を向上させ、開発中に堅牢な型チェックを提供します。
 - **コード品質への焦点:** ESLintと`@antfu/eslint-config`を含み、コードベースのリンティングとベストプラクティスの適用を実現します。
+- **Git フック:** `husky`と`lint-staged`を統合し、コミット前のチェックを実施します。
 
 ## 💻 技術スタック
 
 - **フレームワーク/ライブラリ:** React (v19)
-- **UIツールキット/スタイリング:** Mantine UI（`@mantine/core`）、Tailwind CSS（`tailwindcss`）
-- **ビルドツール:** Rsbuild（`@rsbuild/core`）
-- **言語:** TypeScript (v5.8.x)
-- **CSS処理:** `autoprefixer`や`postcss-simple-vars`などのプラグインを備えたPostCSS
+- **スタイリング:** Tailwind CSS (`tailwindcss`)
+- **ビルドツール:** Rsbuild (`@rsbuild/core`)
+- **言語:** TypeScript (v5.9.x)
+- **CSS処理:** PostCSS with `@tailwindcss/postcss`
 - **リンティング:** `@antfu/eslint-config`を備えたESLint
-- **状態管理:** Zustand
-- **ルーティング:** Tanstack Router
-- **データフェッチング:** Tanstack Query (React Query)
-- **テーブルコンポーネント:** Tanstack Table
+- **アイコン:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-依存関係の完全なリストについては[package.json](package.json)を参照してください。
+依存関係の完全なリストについては[package.json](../package.json)を参照してください。
 
 ## 🚀 始め方
 
@@ -58,18 +53,40 @@ npm -v
 
 ### インストール
 
-スクリプトの実行
+1. テンプレートを使用して新しいプロジェクトを作成:
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. プロジェクトディレクトリに移動し、依存関係をインストール:
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. 開発サーバーを起動:
+
+   ```bash
+   pnpm dev
+   ```
+
+## 🧱 プロジェクト構造
+
 ```
-
-依存関係のインストール
-
-```bash
-npm install
-yarn install
-pnpm install
+├── public/           # 静的アセット
+├── src/              # ソースコード
+│   ├── App.css       # グローバルスタイルとTailwindのインポート
+│   ├── App.tsx       # メインアプリケーションコンポーネント
+│   └── index.tsx     # エントリーポイント
+├── rsbuild.config.ts # Rsbuild設定
+├── tsconfig.json     # TypeScript設定
+├── eslint.config.js  # ESLint設定
+└── package.json      # プロジェクトの依存関係とスクリプト
 ```
 
 ## 🤝 コントリビューション
@@ -84,7 +101,7 @@ pnpm install
 
 ## 👤 Author
 
-- **Rikka:** (admin@rikka.cc)
+- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
 ## 🔗 Links

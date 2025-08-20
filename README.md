@@ -9,36 +9,31 @@
 
 ---
 
-[中文](/readme/README-CN.md) | [日本語](/readme/README-JP.md) | [Русский язык](/readme/README-RU.md)
+[中文](./readme/README-CN.md) | [日本語](./readme/README-JP.md) | [Русский язык](./readme/README-RU.md)
 
-> A project combining React, Mantine UI, and Tailwind CSS for building modern web applications.
+> A modern UI development template integrating React and Tailwind CSS, with Rsbuild, TypeScript, ESLint (Antfu config), and Iconify support.
 
 ## ✨ Features
 
 - **Modern UI Framework:** Built using React (v19) for a component-driven, declarative interface.
-- **Rich Component Library:** Integrates with Mantine UI (`@mantine/core` and `@mantine/hooks`) providing pre-built UI elements and utility hooks.
-- **Utility-First Styling:** Employs Tailwind CSS along with `@tailwindcss/postcss`, enabling flexible and rapid styling while maintaining consistency.
-- **PostCSS Integration:** Leverages PostCSS plugins like `postcss-import`, `autoprefixer`, and `postcss-simple-vars` for advanced CSS processing.
-- **Type Safety:** Utilizes TypeScript (v5.8.x) to enhance code reliability and provide robust type checking during development.
+- **Utility-First Styling:** Employs Tailwind CSS v4 (`tailwindcss`) along with `@tailwindcss/postcss`, enabling flexible and rapid styling while maintaining consistency.
 - **Fast Development Workflow:** Uses Rsbuild (`@rsbuild/core` and `@rsbuild/plugin-react`) for optimized builds and efficient development server performance.
-- **Icon Support:** Includes `@iconify/json` and `@iconify/tailwind` for scalable and customizable iconography.
-- **Consistent Design Language:** Combines `postcss-preset-mantine` and `tailwind-preset-mantine` for seamless integration between Mantine and Tailwind styles.
+- **Icon Support:** Includes `@iconify/json` and `@iconify/tailwind4` for scalable and customizable iconography.
+- **Type Safety:** Utilizes TypeScript (v5.9.x) to enhance code reliability and provide robust type checking during development.
 - **Focus on Code Quality:** Includes ESLint with `@antfu/eslint-config` for linting and enforcing best practices in the codebase.
+- **Git Hooks:** Integrated `husky` and `lint-staged` for pre-commit checks.
 
 ## 💻 Tech Stack
 
 - **Framework/Library:** React (v19)
-- **UI Toolkit/Styling:** Mantine UI (`@mantine/core`), Tailwind CSS (`tailwindcss`)
+- **Styling:** Tailwind CSS (`tailwindcss`)
 - **Build Tool:** Rsbuild (`@rsbuild/core`)
-- **Language:** TypeScript (v5.8.x)
-- **CSS Processing:** PostCSS with plugins like `autoprefixer` and `postcss-simple-vars`
+- **Language:** TypeScript (v5.9.x)
+- **CSS Processing:** PostCSS with `@tailwindcss/postcss`
 - **Linting:** ESLint with `@antfu/eslint-config`
-- **State Management:** Zustand
-- **Routing:** Tanstack Router
-- **Data Fetching:** Tanstack Query (React Query)
-- **Table Component:** Tanstack Table
+- **Iconography:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-See the [package.json](package.json) for a full list of dependencies.
+See the [package.json](./package.json) for a full list of dependencies.
 
 ## 🚀 Getting Started
 
@@ -58,18 +53,40 @@ npm -v
 
 ### Installation
 
-Run script
+1. Create a new project using the template:
 
-```bash
-pnpm create trapar-waves
+   ```bash
+   pnpm create trapar-waves
+   ```
+
+2. Navigate to your project directory and install dependencies:
+
+   ```bash
+   pnpm install
+   # or
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+## 🧱 Project Structure
+
 ```
-
-Install dependencies
-
-```bash
-npm install
-yarn install
-pnpm install
+├── public/           # Static assets
+├── src/              # Source code
+│   ├── App.css       # Global styles and Tailwind imports
+│   ├── App.tsx       # Main application component
+│   └── index.tsx     # Entry point
+├── rsbuild.config.ts # Rsbuild configuration
+├── tsconfig.json     # TypeScript configuration
+├── eslint.config.js  # ESLint configuration
+└── package.json      # Project dependencies and scripts
 ```
 
 ## 🤝 Contributing
@@ -84,7 +101,7 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 
 ## 👤 Author
 
-- **Rikka:** (admin@rikka.cc)
+- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
 - **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
 ## 🔗 Links
