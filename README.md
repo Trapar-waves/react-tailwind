@@ -23,6 +23,22 @@
 - **Focus on Code Quality:** Includes ESLint with `@antfu/eslint-config` for linting and enforcing best practices in the codebase.
 - **Git Hooks:** Integrated `husky` and `lint-staged` for pre-commit checks.
 
+## GitHub Pages
+
+Pushing a version tag matching `v*` runs [`.github/workflows/pages.yml`](./.github/workflows/pages.yml), which builds with `BASE_PATH=/<repository-name>/`, copies `dist/index.html` to `dist/404.html` for SPA routing, and deploys to GitHub Pages. In the repository **Settings → Pages**, set **Source** to **GitHub Actions** once.
+
+Local subpath check (Unix-like shell):
+
+```bash
+BASE_PATH=/react-tailwind/ pnpm run build && pnpm preview
+```
+
+PowerShell:
+
+```powershell
+$env:BASE_PATH="/react-tailwind/"; pnpm run build; pnpm preview
+```
+
 ## 💻 Tech Stack
 
 - **Framework/Library:** React (v19)
