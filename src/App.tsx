@@ -14,7 +14,7 @@ const techStack: TechItem[] = [
   { id: "react", label: "React 19", hint: "组件驱动、声明式 UI", iconClass: "icon-[logos--react]" },
   { id: "ts", label: "TypeScript", hint: "静态类型与编辑器体验", iconClass: "icon-[logos--typescript-icon]" },
   { id: "tailwind", label: "Tailwind CSS 4", hint: "tailwindcss · @tailwindcss/postcss", iconClass: "icon-[logos--tailwindcss-icon]" },
-  { id: "rsbuild", label: "Rsbuild", hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[logos--webpack]" },
+  { id: "rsbuild", label: "Rsbuild", hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]" },
   { id: "eslint", label: "ESLint", hint: "@antfu/eslint-config", iconClass: "icon-[logos--eslint]" },
   { id: "iconify", label: "Iconify", hint: "@iconify/json · @iconify/tailwind4（含 logos）", iconClass: "icon-[logos--markdown]" },
   { id: "pnpm", label: "pnpm", hint: "包管理与 CI 缓存", iconClass: "icon-[logos--pnpm]" },
@@ -75,7 +75,7 @@ function App() {
             </a>
             <span className="icon-[logos--react] text-3xl text-sky-700" aria-hidden />
             <span className="icon-[logos--tailwindcss-icon] text-3xl text-cyan-700" aria-hidden />
-            <span className="icon-[logos--webpack] text-3xl text-amber-800" aria-hidden />
+            <span className="icon-[material-icon-theme--rstack] text-3xl text-amber-800" aria-hidden />
           </div>
         </header>
       </div>
@@ -83,9 +83,9 @@ function App() {
       <main id="main" className="mx-auto max-w-5xl px-6 py-14 sm:px-10">
         <h2 className="font-display text-2xl text-slate-900">技术栈一览</h2>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
-          Rsbuild 与 Rspack/webpack 生态相关示意使用
+          Rsbuild 与 Rspack 生态相关示意使用
           {" "}
-          <code className="rounded bg-slate-200/80 px-1.5 py-0.5 text-slate-800">logos--webpack</code>
+          <code className="rounded bg-slate-200/80 px-1.5 py-0.5 text-slate-800">material-icon-theme--rstack</code>
           ；图标集说明见上文链接。
         </p>
         <ul className="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
