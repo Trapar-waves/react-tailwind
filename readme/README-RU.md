@@ -11,45 +11,36 @@
 
 [English](../README.md) | [中文](./README-CN.md) | [日本語](./README-JP.md)
 
-> Современный шаблон разработки пользовательского интерфейса, интегрирующий React и Tailwind CSS, с поддержкой Rsbuild, TypeScript, ESLint (конфигурация Antfu) и Iconify.
+> Современный шаблон разработки UI, интегрирующий React и Tailwind CSS, с поддержкой Rsbuild, TypeScript, ESLint (конфигурация Antfu) и Iconify.
 
-## ✨ Особенности
+## ✨ Возможности
 
-- **Современный UI-фреймворк:** Строится с использованием React (v19) для компонентно-ориентированного декларативного интерфейса.
-- **Стилизация с упором на утилиты:** Использует Tailwind CSS v4 (`tailwindcss`) вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю стилизацию при сохранении согласованности.
-- **Быстрый рабочий процесс разработки:** Использует Rsbuild (`@rsbuild/core` и `@rsbuild/plugin-react`) для оптимизированных сборок и эффективной производительности сервера разработки.
-- **Поддержка иконок:** Включает `@iconify/json` и `@iconify/tailwind4` для масштабируемой и настраиваемой иконографии.
-- **Типовая безопасность:** Использует TypeScript (v5.9.x) для повышения надежности кода и обеспечения надежной проверки типов во время разработки.
-- **Фокус на качестве кода:** Включает ESLint с `@antfu/eslint-config` для линтинга и обеспечения лучших практик в кодовой базе.
-- **Git Hooks:** Интеграция `husky` и `lint-staged` для предварительных проверок коммитов.
+- **Современный UI фреймворк:** Построен на React (v19) для компонентно-ориентированного декларативного интерфейса.
+- **Утилитарный подход к стилям:** Использует Tailwind CSS v4 (`tailwindcss`) вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю разработку стилей с сохранением一致性.
+- **Быстрый рабочий процесс разработки:** Использует Rsbuild (`@rsbuild/core` и `@rsbuild/plugin-react`) для оптимизированных сборок и эффективной работы сервера разработки.
+- **Поддержка иконок:** Включает `@iconify/json` и `@iconify/tailwind4` для масштабируемых и настраиваемых иконок.
+- **Типобезопасность:** Использует TypeScript (v5.9.x) для повышения надежности кода и обеспечения строгой проверки типов во время разработки.
+- **Фокус на качестве кода:** Включает ESLint с `@antfu/eslint-config` для линтинга и применения лучших практик.
+- **Git Hooks:** Интегрированы `husky` и `lint-staged` для проверок перед коммитом.
 
-## 💻 Технологический стек
+## 💻 Технический стек
 
-- **Фреймворк/Библиотека:** React (v19)
+- **Фреймворк/библиотека:** React (v19)
 - **Стилизация:** Tailwind CSS (`tailwindcss`)
 - **Инструмент сборки:** Rsbuild (`@rsbuild/core`)
 - **Язык:** TypeScript (v5.9.x)
-- **Обработка CSS:** PostCSS with `@tailwindcss/postcss`
-- **Линтинг:** ESLint с `@antfu/eslint-config`
+- **Обработка CSS:** PostCSS и `@tailwindcss/postcss`
+- **Линтинг:** ESLint и `@antfu/eslint-config`
 - **Иконки:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-Полный список зависимостей см. в [package.json](../package.json).
+Полный список зависимостей смотрите в [package.json](../package.json).
 
 ## 🚀 Начало работы
 
-Следуйте этим инструкциям, чтобы запустить проект локально.
-
 ### Предварительные требования
 
-Убедитесь, что у вас установлены следующие компоненты:
-
-- Node.js (рекомендуется версия >= 18.x)
-- Пакетный менеджер (npm, yarn или pnpm)
-
-```bash
-node -v
-npm -v
-```
+- Node.js (рекомендуется >= 18.x)
+- Менеджер пакетов (npm, yarn или pnpm)
 
 ### Установка
 
@@ -59,14 +50,10 @@ npm -v
    pnpm create trapar-waves
    ```
 
-2. Перейдите в каталог вашего проекта и установите зависимости:
+2. Перейдите в директорию проекта и установите зависимости:
 
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
 
 3. Запустите сервер разработки:
@@ -75,12 +62,12 @@ npm -v
    pnpm dev
    ```
 
-## 🧱 Структура проекта
+## 📁 Структура проекта
 
 ```
 ├── public/           # Статические ресурсы
 ├── src/              # Исходный код
-│   ├── App.css       # Глобальные стили и импорт Tailwind
+│   ├── App.css       # Глобальные стили и импорты Tailwind
 │   ├── App.tsx       # Основной компонент приложения
 │   └── index.tsx     # Точка входа
 ├── rsbuild.config.ts # Конфигурация Rsbuild
@@ -91,21 +78,24 @@ npm -v
 
 ## 🤝 Участие в разработке
 
-Вклад в проект приветствуется и очень ценится! Чтобы внести вклад, следуйте этим шагам:
+Участие приветствуется и высоко ценится! Пожалуйста, следуйте этим шагам для вклада:
 
-1. Сделайте форк репозитория
-2. Создайте ветку с функцией (`git checkout -b feature/amazing-feature`)
-3. Зафиксируйте свои изменения (`git commit -m 'Add some amazing feature'`)
+1. Fork репозиторий
+2. Создайте ветку для новой функции (`git checkout -b feature/amazing-feature`)
+3. Зафиксируйте изменения (`git commit -m 'Add some amazing feature'`)
 4. Отправьте изменения в ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
 
-## 👤 Author
+## 📄 Лицензия
+
+MIT License © 2025 Trapar Waves
+
+## 👤 Автор
 
 - **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
-- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+- **Профиль GitHub:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
 
-## 🔗 Links
+## 🔗 Ссылки
 
 - **Репозиторий:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-- **Домашняя страница:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-- **Проблемы:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
+- **Issues:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)

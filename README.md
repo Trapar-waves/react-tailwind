@@ -53,19 +53,10 @@ See the [package.json](./package.json) for a full list of dependencies.
 
 ## 🚀 Getting Started
 
-Follow these instructions to get the project running locally.
-
 ### Prerequisites
-
-Ensure you have the following installed:
 
 - Node.js (>= 18.x recommended)
 - Package manager (npm, yarn, or pnpm)
-
-```bash
-node -v
-npm -v
-```
 
 ### Installation
 
@@ -79,10 +70,6 @@ npm -v
 
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
 
 3. Start the development server:
@@ -91,7 +78,7 @@ npm -v
    pnpm dev
    ```
 
-## 🧱 Project Structure
+## 📁 Project Structure
 
 ```
 ├── public/           # Static assets
@@ -115,6 +102,10 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+## 📄 License
+
+MIT License © 2025 Trapar Waves
+
 ## 👤 Author
 
 - **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
@@ -123,5 +114,4 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 ## 🔗 Links
 
 - **Repository:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-- **Homepage:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
 - **Issues:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)

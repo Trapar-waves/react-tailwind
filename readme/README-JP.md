@@ -11,101 +11,91 @@
 
 [English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
-> ReactとTailwind CSSを統合したモダンなUI開発テンプレート。Rsbuild、TypeScript、ESLint (Antfu config)、Iconifyをサポート。
+> React と Tailwind CSS を統合したモダンな UI 開発テンプレート。Rsbuild、TypeScript、ESLint（Antfu 設定）、Iconify サポート付き。
 
 ## ✨ 特徴
 
-- **モダンUIフレームワーク:** コンポーネント駆動の宣言型インターフェースのためにReact (v19)を使用して構築されています。
-- **ユーティリティファーストのスタイリング:** Tailwind CSS v4 (`tailwindcss`)と`@tailwindcss/postcss`を採用し、一貫性を維持しながら柔軟で迅速なスタイリングを可能にします。
-- **高速開発ワークフロー:** Rsbuild（`@rsbuild/core`と`@rsbuild/plugin-react`）を使用して最適化されたビルドと効率的な開発サーバーパフォーマンスを実現します。
-- **アイコンサポート:** `@iconify/json`と`@iconify/tailwind4`を含み、スケーラブルでカスタマイズ可能なアイコンを提供します。
-- **型安全性:** TypeScript (v5.9.x)を使用してコードの信頼性を向上させ、開発中に堅牢な型チェックを提供します。
-- **コード品質への焦点:** ESLintと`@antfu/eslint-config`を含み、コードベースのリンティングとベストプラクティスの適用を実現します。
-- **Git フック:** `husky`と`lint-staged`を統合し、コミット前のチェックを実施します。
+- **モダン UI フレームワーク：** React (v19) を使用したコンポーネント駆動の宣言的インターフェース。
+- **ユーティリティファーストのスタイリング：** Tailwind CSS v4（`tailwindcss`）と `@tailwindcss/postcss` を採用し、柔軟で迅速なスタイリングを実現しながら一貫性を維持。
+- **高速開発ワークフロー：** Rsbuild（`@rsbuild/core` と `@rsbuild/plugin-react`）を使用し、最適化されたビルドと効率的な開発サーバー性能を実現。
+- **アイコンサポート：** `@iconify/json` と `@iconify/tailwind4` を含み、スケーラブルでカスタマイズ可能なアイコンを提供。
+- **型安全性：** TypeScript (v5.9.x) を活用し、コードの信頼性を向上させ、開発中に堅牢な型チェックを提供。
+- **コード品質：** ESLint と `@antfu/eslint-config` を含み、リントとベストプラクティスの適用を強制。
+- **Git Hooks：** `husky` と `lint-staged` を統合し、コミット前チェックを実行。
 
 ## 💻 技術スタック
 
-- **フレームワーク/ライブラリ:** React (v19)
-- **スタイリング:** Tailwind CSS (`tailwindcss`)
-- **ビルドツール:** Rsbuild (`@rsbuild/core`)
-- **言語:** TypeScript (v5.9.x)
-- **CSS処理:** PostCSS with `@tailwindcss/postcss`
-- **リンティング:** `@antfu/eslint-config`を備えたESLint
-- **アイコン:** Iconify (`@iconify/json`, `@iconify/tailwind4`)
+- **フレームワーク/ライブラリ：** React (v19)
+- **スタイリング：** Tailwind CSS (`tailwindcss`)
+- **ビルドツール：** Rsbuild (`@rsbuild/core`)
+- **言語：** TypeScript (v5.9.x)
+- **CSS 処理：** PostCSS と `@tailwindcss/postcss`
+- **リント：** ESLint と `@antfu/eslint-config`
+- **アイコン：** Iconify (`@iconify/json`, `@iconify/tailwind4`)
 
-依存関係の完全なリストについては[package.json](../package.json)を参照してください。
+依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
-## 🚀 始め方
-
-以下の手順に従ってプロジェクトをローカルで実行してください。
+## 🚀 はじめに
 
 ### 前提条件
 
-以下がインストールされていることを確認してください：
-
-- Node.js (推奨バージョン >= 18.x)
-- パッケージマネージャー (npm, yarn または pnpm)
-
-```bash
-node -v
-npm -v
-```
+- Node.js（>= 18.x 推奨）
+- パッケージマネージャー（npm、yarn、または pnpm）
 
 ### インストール
 
-1. テンプレートを使用して新しいプロジェクトを作成:
+1. テンプレートを使用して新しいプロジェクトを作成：
 
    ```bash
    pnpm create trapar-waves
    ```
 
-2. プロジェクトディレクトリに移動し、依存関係をインストール:
+2. プロジェクトディレクトリに移動し、依存関係をインストール：
 
    ```bash
    pnpm install
-   # or
-   npm install
-   # or
-   yarn install
    ```
 
-3. 開発サーバーを起動:
+3. 開発サーバーを起動：
 
    ```bash
    pnpm dev
    ```
 
-## 🧱 プロジェクト構造
+## 📁 プロジェクト構造
 
 ```
 ├── public/           # 静的アセット
 ├── src/              # ソースコード
-│   ├── App.css       # グローバルスタイルとTailwindのインポート
+│   ├── App.css       # グローバルスタイルと Tailwind インポート
 │   ├── App.tsx       # メインアプリケーションコンポーネント
 │   └── index.tsx     # エントリーポイント
-├── rsbuild.config.ts # Rsbuild設定
-├── tsconfig.json     # TypeScript設定
-├── eslint.config.js  # ESLint設定
+├── rsbuild.config.ts # Rsbuild 設定
+├── tsconfig.json     # TypeScript 設定
+├── eslint.config.js  # ESLint 設定
 └── package.json      # プロジェクトの依存関係とスクリプト
 ```
 
-## 🤝 コントリビューション
+## 🤝 コントリビュート
 
-貢献は歓迎され、非常に高く評価されています！貢献するには以下の手順に従ってください：
+コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
-1. リポジトリをフォークする
-2. 機能ブランチを作成する（`git checkout -b feature/amazing-feature`）
-3. 変更をコミットする（`git commit -m 'Add some amazing feature'`）
-4. ブランチにプッシュする（`git push origin feature/amazing-feature`）
-5. Pull Requestを開く
+1. リポジトリをフォーク
+2. 機能ブランチを作成（`git checkout -b feature/amazing-feature`）
+3. 変更をコミット（`git commit -m 'Add some amazing feature'`）
+4. ブランチにプッシュ（`git push origin feature/amazing-feature`）
+5. Pull Request を作成
 
-## 👤 Author
+## 📄 ライセンス
 
-- **Rikka:** [admin@rikka.cc](mailto:admin@rikka.cc)
-- **GitHub Profile:** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+MIT License © 2025 Trapar Waves
 
-## 🔗 Links
+## 👤 作者
 
-- **リポジトリ:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-- **ホームページ:** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
-- **イシュー:** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
+- **Rikka：** [admin@rikka.cc](mailto:admin@rikka.cc)
+- **GitHub プロフィール：** [Muromi-Rikka](https://github.com/Muromi-Rikka)
+
+## 🔗 リンク
+
+- **リポジトリ：** [https://github.com/Trapar-waves/react-tailwind](https://github.com/Trapar-waves/react-tailwind)
+- **Issues：** [https://github.com/Trapar-waves/react-tailwind/issues](https://github.com/Trapar-waves/react-tailwind/issues)
