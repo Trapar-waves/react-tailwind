@@ -7,13 +7,15 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
 ![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
+![React Tailwind](assets/readme/hero.svg)
+
 ---
 
 [中文](./readme/README-CN.md) | [日本語](./readme/README-JP.md) | [Русский язык](./readme/README-RU.md)
 
 > A modern UI development template integrating React and Tailwind CSS, with Rsbuild, TypeScript, ESLint (Antfu config), and Iconify support.
 
-## ✨ Features
+![Features](assets/readme/headers/features.svg)
 
 - **Modern UI Framework:** Built using React (v19) for a component-driven, declarative interface.
 - **Utility-First Styling:** Employs Tailwind CSS v4 (`tailwindcss`) along with `@tailwindcss/postcss`, enabling flexible and rapid styling while maintaining consistency.
@@ -39,7 +41,7 @@ PowerShell:
 $env:BASE_PATH="/react-tailwind/"; pnpm run build; pnpm preview
 ```
 
-## 💻 Tech Stack
+![Tech Stack](assets/readme/headers/tech-stack.svg)
 
 - **Framework/Library:** React (v19)
 - **Styling:** Tailwind CSS (`tailwindcss`)
@@ -51,7 +53,7 @@ $env:BASE_PATH="/react-tailwind/"; pnpm run build; pnpm preview
 
 See the [package.json](./package.json) for a full list of dependencies.
 
-## 🚀 Getting Started
+![Getting Started](assets/readme/headers/getting-started.svg)
 
 ### Prerequisites
 
@@ -78,7 +80,7 @@ See the [package.json](./package.json) for a full list of dependencies.
    pnpm dev
    ```
 
-## 📁 Project Structure
+![Project Structure](assets/readme/headers/project-structure.svg)
 
 ```
 ├── public/           # Static assets
@@ -92,7 +94,7 @@ See the [package.json](./package.json) for a full list of dependencies.
 └── package.json      # Project dependencies and scripts
 ```
 
-## 🤝 Contributing
+![Contributing](assets/readme/headers/contributing.svg)
 
 Contributions are welcome and greatly appreciated! Please follow these steps to contribute:
 
@@ -102,7 +104,7 @@ Contributions are welcome and greatly appreciated! Please follow these steps to 
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
+![License](assets/readme/headers/license.svg)
 
 MIT License © 2025 Trapar Waves
 
