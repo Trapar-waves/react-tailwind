@@ -7,13 +7,15 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
 ![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
+![React Tailwind](../assets/readme/hero.svg)
+
 ---
 
 [English](../README.md) | [中文](./README-CN.md) | [日本語](./README-JP.md)
 
 > Современный шаблон разработки UI, интегрирующий React и Tailwind CSS, с поддержкой Rsbuild, TypeScript, ESLint (конфигурация Antfu) и Iconify.
 
-## ✨ Возможности
+![Features](../assets/readme/headers/features.svg)
 
 - **Современный UI фреймворк:** Построен на React (v19) для компонентно-ориентированного декларативного интерфейса.
 - **Утилитарный подход к стилям:** Использует Tailwind CSS v4 (`tailwindcss`) вместе с `@tailwindcss/postcss`, обеспечивая гибкую и быструю разработку стилей с сохранением一致性.
@@ -23,7 +25,7 @@
 - **Фокус на качестве кода:** Включает ESLint с `@antfu/eslint-config` для линтинга и применения лучших практик.
 - **Git Hooks:** Интегрированы `husky` и `lint-staged` для проверок перед коммитом.
 
-## 💻 Технический стек
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 - **Фреймворк/библиотека:** React (v19)
 - **Стилизация:** Tailwind CSS (`tailwindcss`)
@@ -35,7 +37,7 @@
 
 Полный список зависимостей смотрите в [package.json](../package.json).
 
-## 🚀 Начало работы
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ### Предварительные требования
 
@@ -62,7 +64,7 @@
    pnpm dev
    ```
 
-## 📁 Структура проекта
+![Project Structure](../assets/readme/headers/project-structure.svg)
 
 ```
 ├── public/           # Статические ресурсы
@@ -76,7 +78,7 @@
 └── package.json      # Зависимости и скрипты проекта
 ```
 
-## 🤝 Участие в разработке
+![Contributing](../assets/readme/headers/contributing.svg)
 
 Участие приветствуется и высоко ценится! Пожалуйста, следуйте этим шагам для вклада:
 
@@ -86,7 +88,7 @@
 4. Отправьте изменения в ветку (`git push origin feature/amazing-feature`)
 5. Откройте Pull Request
 
-## 📄 Лицензия
+![License](../assets/readme/headers/license.svg)
 
 MIT License © 2025 Trapar Waves
 

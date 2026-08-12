@@ -7,13 +7,15 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
 ![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
+![React Tailwind](../assets/readme/hero.svg)
+
 ---
 
 [English](../README.md) | [中文](./README-CN.md) | [Русский язык](./README-RU.md)
 
 > React と Tailwind CSS を統合したモダンな UI 開発テンプレート。Rsbuild、TypeScript、ESLint（Antfu 設定）、Iconify サポート付き。
 
-## ✨ 特徴
+![Features](../assets/readme/headers/features.svg)
 
 - **モダン UI フレームワーク：** React (v19) を使用したコンポーネント駆動の宣言的インターフェース。
 - **ユーティリティファーストのスタイリング：** Tailwind CSS v4（`tailwindcss`）と `@tailwindcss/postcss` を採用し、柔軟で迅速なスタイリングを実現しながら一貫性を維持。
@@ -23,7 +25,7 @@
 - **コード品質：** ESLint と `@antfu/eslint-config` を含み、リントとベストプラクティスの適用を強制。
 - **Git Hooks：** `husky` と `lint-staged` を統合し、コミット前チェックを実行。
 
-## 💻 技術スタック
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 - **フレームワーク/ライブラリ：** React (v19)
 - **スタイリング：** Tailwind CSS (`tailwindcss`)
@@ -35,7 +37,7 @@
 
 依存関係の完全なリストは [package.json](../package.json) を参照してください。
 
-## 🚀 はじめに
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ### 前提条件
 
@@ -62,7 +64,7 @@
    pnpm dev
    ```
 
-## 📁 プロジェクト構造
+![Project Structure](../assets/readme/headers/project-structure.svg)
 
 ```
 ├── public/           # 静的アセット
@@ -76,7 +78,7 @@
 └── package.json      # プロジェクトの依存関係とスクリプト
 ```
 
-## 🤝 コントリビュート
+![Contributing](../assets/readme/headers/contributing.svg)
 
 コントリビュートを歓迎します！以下の手順に従ってコントリビュートしてください：
 
@@ -86,7 +88,7 @@
 4. ブランチにプッシュ（`git push origin feature/amazing-feature`）
 5. Pull Request を作成
 
-## 📄 ライセンス
+![License](../assets/readme/headers/license.svg)
 
 MIT License © 2025 Trapar Waves
 

@@ -7,13 +7,15 @@
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Trapar-waves/react-tailwind/release.yml)
 ![Renovate](https://img.shields.io/badge/renovate-enabled-blue)
 
+![React Tailwind](../assets/readme/hero.svg)
+
 ---
 
 [English](../README.md) | [日本語](./README-JP.md) | [Русский язык](./README-RU.md)
 
 > 一个现代化的 UI 开发模板，集成了 React 和 Tailwind CSS，配合 Rsbuild、TypeScript、ESLint（Antfu 配置）和 Iconify 支持。
 
-## ✨ 特性
+![Features](../assets/readme/headers/features.svg)
 
 - **现代 UI 框架：** 使用 React (v19) 构建，支持组件驱动的声明式接口。
 - **实用优先的样式：** 采用 Tailwind CSS v4（`tailwindcss`）和 `@tailwindcss/postcss`，实现灵活快速的样式开发，同时保持一致性。
@@ -23,7 +25,7 @@
 - **代码质量：** 包含 ESLint 和 `@antfu/eslint-config` 进行代码检查和最佳实践 enforcement。
 - **Git Hooks：** 集成 `husky` 和 `lint-staged` 进行提交前检查。
 
-## 💻 技术栈
+![Tech Stack](../assets/readme/headers/tech-stack.svg)
 
 - **框架/库：** React (v19)
 - **样式：** Tailwind CSS (`tailwindcss`)
@@ -35,7 +37,7 @@
 
 查看 [package.json](../package.json) 获取完整的依赖列表。
 
-## 🚀 快速开始
+![Getting Started](../assets/readme/headers/getting-started.svg)
 
 ### 前置条件
 
@@ -62,7 +64,7 @@
    pnpm dev
    ```
 
-## 📁 项目结构
+![Project Structure](../assets/readme/headers/project-structure.svg)
 
 ```
 ├── public/           # 静态资源
@@ -76,7 +78,7 @@
 └── package.json      # 项目依赖和脚本
 ```
 
-## 🤝 贡献
+![Contributing](../assets/readme/headers/contributing.svg)
 
 欢迎贡献，非常感谢！请按照以下步骤贡献：
 
@@ -86,7 +88,7 @@
 4. 推送到分支（`git push origin feature/amazing-feature`）
 5. 创建 Pull Request
 
-## 📄 许可证
+![License](../assets/readme/headers/license.svg)
 
 MIT License © 2025 Trapar Waves
 
