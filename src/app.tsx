@@ -1,25 +1,25 @@
-import "./App.css";
+import "./app.css";
 
 const HOMEPAGE = "https://github.com/Trapar-waves/react-tailwind";
 const LOGOS_SET_URL = "https://icon-sets.iconify.design/logos/";
 
 interface TechItem {
-  id: string;
-  label: string;
   hint: string;
   iconClass: string;
+  id: string;
+  label: string;
 }
 
 const techStack: TechItem[] = [
-  { id: "react", label: "React 19", hint: "组件驱动、声明式 UI", iconClass: "icon-[logos--react]" },
-  { id: "ts", label: "TypeScript", hint: "静态类型与编辑器体验", iconClass: "icon-[logos--typescript-icon]" },
-  { id: "tailwind", label: "Tailwind CSS 4", hint: "tailwindcss · @tailwindcss/postcss", iconClass: "icon-[logos--tailwindcss-icon]" },
-  { id: "rsbuild", label: "Rsbuild", hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]" },
-  { id: "eslint", label: "ESLint", hint: "@antfu/eslint-config", iconClass: "icon-[logos--eslint]" },
-  { id: "iconify", label: "Iconify", hint: "@iconify/json · @iconify/tailwind4（含 logos）", iconClass: "icon-[logos--markdown]" },
-  { id: "pnpm", label: "pnpm", hint: "包管理与 CI 缓存", iconClass: "icon-[logos--pnpm]" },
-  { id: "node", label: "Node.js", hint: "本地开发与构建", iconClass: "icon-[logos--nodejs-icon]" },
-  { id: "github", label: "GitHub Actions", hint: "Release 与 Pages 工作流", iconClass: "icon-[logos--github-icon]" },
+  { hint: "组件驱动、声明式 UI", iconClass: "icon-[logos--react]", id: "react", label: "React 19" },
+  { hint: "静态类型与编辑器体验", iconClass: "icon-[logos--typescript-icon]", id: "ts", label: "TypeScript" },
+  { hint: "tailwindcss · @tailwindcss/postcss", iconClass: "icon-[logos--tailwindcss-icon]", id: "tailwind", label: "Tailwind CSS 4" },
+  { hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]", id: "rsbuild", label: "Rsbuild" },
+  { hint: "@renton/eslint-config-react", iconClass: "icon-[logos--eslint]", id: "eslint", label: "ESLint" },
+  { hint: "@iconify/json · @iconify/tailwind4（含 logos）", iconClass: "icon-[logos--markdown]", id: "iconify", label: "Iconify" },
+  { hint: "包管理与 CI 缓存", iconClass: "icon-[logos--pnpm]", id: "pnpm", label: "pnpm" },
+  { hint: "本地开发与构建", iconClass: "icon-[logos--nodejs-icon]", id: "node", label: "Node.js" },
+  { hint: "Release 与 Pages 工作流", iconClass: "icon-[logos--github-icon]", id: "github", label: "GitHub Actions" },
 ];
 
 const readmeFeatures: string[] = [
@@ -28,22 +28,22 @@ const readmeFeatures: string[] = [
   "Rsbuild 提供极速开发与优化构建。",
   "@iconify/json 与 @iconify/tailwind4，支持 logos 等多集合矢量图标。",
   "TypeScript 贯穿模板代码。",
-  "@antfu/eslint-config 统一代码风格与规则。",
+  "@renton/eslint-config-react 统一代码风格与规则。",
   "Husky 与 lint-staged 在提交前执行检查。",
 ];
 
 const readmeTechNote = "本模板未内置路由或全局状态；可按业务接入 TanStack Router、Zustand 等，与 README「扩展」章节一致。";
 
-function App() {
+export default function App() {
   return (
     <div className="min-h-dvh bg-[#faf8f5] text-slate-900 font-sans antialiased">
-      <a href="#main" className="skip-link">
+      <a className="skip-link" href="#main">
         跳到主要内容
       </a>
       <div className="hero-grid relative overflow-hidden border-b border-slate-200/80">
         <div
-          className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-orange-500/15 blur-3xl motion-safe:animate-[pulse_14s_ease-in-out_infinite]"
           aria-hidden
+          className="pointer-events-none absolute -right-24 top-0 h-72 w-72 rounded-full bg-orange-500/15 blur-3xl motion-safe:animate-[pulse_14s_ease-in-out_infinite]"
         />
         <header className="relative mx-auto max-w-5xl px-6 pb-16 pt-14 sm:px-10 sm:pb-20 sm:pt-20">
           <p className="font-mono text-xs font-medium uppercase tracking-[0.2em] text-orange-700">
@@ -56,10 +56,10 @@ function App() {
             本页结合 README 特性与
             {" "}
             <a
-              href={LOGOS_SET_URL}
-              target="_blank"
-              rel="noreferrer"
               className="font-semibold text-orange-800 underline decoration-orange-300 underline-offset-2 hover:text-orange-950"
+              href={LOGOS_SET_URL}
+              rel="noreferrer"
+              target="_blank"
             >
               Iconify logos
             </a>
@@ -68,19 +68,19 @@ function App() {
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
-              href={HOMEPAGE}
               className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full bg-slate-900 px-8 py-3 text-sm font-semibold text-white shadow-lg shadow-slate-900/15 transition hover:bg-slate-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-500"
+              href={HOMEPAGE}
             >
               查看模板仓库
             </a>
-            <span className="icon-[logos--react] text-3xl text-sky-700" aria-hidden />
-            <span className="icon-[logos--tailwindcss-icon] text-3xl text-cyan-700" aria-hidden />
-            <span className="icon-[material-icon-theme--rstack] text-3xl text-amber-800" aria-hidden />
+            <span aria-hidden className="icon-[logos--react] text-3xl text-sky-700" />
+            <span aria-hidden className="icon-[logos--tailwindcss-icon] text-3xl text-cyan-700" />
+            <span aria-hidden className="icon-[material-icon-theme--rstack] text-3xl text-amber-800" />
           </div>
         </header>
       </div>
 
-      <main id="main" className="mx-auto max-w-5xl px-6 py-14 sm:px-10">
+      <main className="mx-auto max-w-5xl px-6 py-14 sm:px-10" id="main">
         <h2 className="font-display text-2xl text-slate-900">技术栈一览</h2>
         <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600">
           Rsbuild 与 Rspack 生态相关示意使用
@@ -91,10 +91,10 @@ function App() {
         <ul className="mt-8 grid list-none gap-4 p-0 sm:grid-cols-2 lg:grid-cols-3">
           {techStack.map(item => (
             <li
-              key={item.id}
               className="flex gap-4 rounded-2xl border border-slate-200/90 bg-white p-5 shadow-sm"
+              key={item.id}
             >
-              <div className="trapar-tech-icon" aria-hidden>
+              <div aria-hidden className="trapar-tech-icon">
                 <span className={item.iconClass} />
               </div>
               <div>
@@ -113,8 +113,8 @@ function App() {
         </ul>
         <p className="mt-4 max-w-3xl text-sm italic text-slate-600">{readmeTechNote}</p>
 
-        <section className="mt-12 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm" aria-labelledby="a11y-heading">
-          <h2 id="a11y-heading" className="font-display text-xl text-slate-900">
+        <section aria-labelledby="a11y-heading" className="mt-12 rounded-2xl border border-slate-200/90 bg-white p-6 shadow-sm">
+          <h2 className="font-display text-xl text-slate-900" id="a11y-heading">
             图标与可访问性
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600">
@@ -125,9 +125,9 @@ function App() {
             ；主操作区保持约 44px 触控高度与可见焦点环；系统开启「减少动态效果」时装饰动画会缩短。
           </p>
           <div className="mt-4 flex flex-wrap gap-3">
-            <span className="icon-[logos--eslint] text-3xl text-purple-800" aria-hidden />
-            <span className="icon-[logos--typescript-icon] text-3xl text-blue-800" aria-hidden />
-            <span className="icon-[logos--github-icon] text-3xl text-slate-800" aria-hidden />
+            <span aria-hidden className="icon-[logos--eslint] text-3xl text-purple-800" />
+            <span aria-hidden className="icon-[logos--typescript-icon] text-3xl text-blue-800" />
+            <span aria-hidden className="icon-[logos--github-icon] text-3xl text-slate-800" />
           </div>
         </section>
 
@@ -165,5 +165,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
