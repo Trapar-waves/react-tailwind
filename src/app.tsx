@@ -11,15 +11,60 @@ interface TechItem {
 }
 
 const techStack: TechItem[] = [
-  { hint: "组件驱动、声明式 UI", iconClass: "icon-[logos--react]", id: "react", label: "React 19" },
-  { hint: "静态类型与编辑器体验", iconClass: "icon-[logos--typescript-icon]", id: "ts", label: "TypeScript" },
-  { hint: "tailwindcss · @tailwindcss/postcss", iconClass: "icon-[logos--tailwindcss-icon]", id: "tailwind", label: "Tailwind CSS 4" },
-  { hint: "@rsbuild/core · @rsbuild/plugin-react", iconClass: "icon-[material-icon-theme--rstack]", id: "rsbuild", label: "Rsbuild" },
-  { hint: "@renton/eslint-config-react", iconClass: "icon-[logos--eslint]", id: "eslint", label: "ESLint" },
-  { hint: "@iconify/json · @iconify/tailwind4（含 logos）", iconClass: "icon-[logos--markdown]", id: "iconify", label: "Iconify" },
-  { hint: "包管理与 CI 缓存", iconClass: "icon-[logos--pnpm]", id: "pnpm", label: "pnpm" },
-  { hint: "本地开发与构建", iconClass: "icon-[logos--nodejs-icon]", id: "node", label: "Node.js" },
-  { hint: "Release 与 Pages 工作流", iconClass: "icon-[logos--github-icon]", id: "github", label: "GitHub Actions" },
+  {
+    hint: "组件驱动、声明式 UI",
+    iconClass: "icon-[logos--react]",
+    id: "react",
+    label: "React 19",
+  },
+  {
+    hint: "静态类型与编辑器体验",
+    iconClass: "icon-[logos--typescript-icon]",
+    id: "ts",
+    label: "TypeScript",
+  },
+  {
+    hint: "tailwindcss · @tailwindcss/postcss",
+    iconClass: "icon-[logos--tailwindcss-icon]",
+    id: "tailwind",
+    label: "Tailwind CSS 4",
+  },
+  {
+    hint: "@rsbuild/core · @rsbuild/plugin-react",
+    iconClass: "icon-[material-icon-theme--rstack]",
+    id: "rsbuild",
+    label: "Rsbuild",
+  },
+  {
+    hint: "@renton/eslint-config-react",
+    iconClass: "icon-[logos--eslint]",
+    id: "eslint",
+    label: "ESLint",
+  },
+  {
+    hint: "@iconify/json · @iconify/tailwind4（含 logos）",
+    iconClass: "icon-[logos--markdown]",
+    id: "iconify",
+    label: "Iconify",
+  },
+  {
+    hint: "包管理与 CI 缓存",
+    iconClass: "icon-[logos--pnpm]",
+    id: "pnpm",
+    label: "pnpm",
+  },
+  {
+    hint: "本地开发与构建",
+    iconClass: "icon-[logos--nodejs-icon]",
+    id: "node",
+    label: "Node.js",
+  },
+  {
+    hint: "Release 与 Pages 工作流",
+    iconClass: "icon-[logos--github-icon]",
+    id: "github",
+    label: "GitHub Actions",
+  },
 ];
 
 const readmeFeatures: string[] = [
